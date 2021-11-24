@@ -1,7 +1,6 @@
 #!/usr/local/bin/python3
 import argparse
 import random
-from typing import Optional
 
 def findSet(array, v1, v2):
     '''Returns the set from ARRAY containing V1 and V2 or [] if no set exists'''
@@ -45,13 +44,6 @@ for _ in range(num_edges):
 
 # randomly assign a weight between 1 and 10 to each edge 
 weighted_edges = [(edge, random.randint(1, 10)) for edge in unweighted_edges]
-
-# print(f'{num_vertices=}')
-# print(f'{num_edges=}')
-# print(f'{len(weighted_edges)=}')
-# for edge in weighted_edges:
-#     print(edge)
-# print()
 
 # write graph to output file
 with open(output_file, 'w') as f:
